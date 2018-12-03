@@ -1,0 +1,247 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/****************** NAV BAR *******************/
+
+.menu {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    background:azure;
+    position: fixed;
+    z-index:1; 
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin-top: -14px;
+    /* border: 2px solid black; */
+    width: 30%;
+}
+
+.logo img {
+    height: 70px;
+    width: 60px;
+}
+
+#navbar ul {
+    list-style: none;
+    background: none;
+    overflow: hidden;
+    color: rgb(41,51,71);
+    padding: 0;
+    margin: auto;
+}
+#navbar ul li {
+    display: inline-block;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: rgb(41,51,71);
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    height: 66px;
+}
+.active, .btn:hover {
+    border-radius: 25px;
+    border: 2px solid cyan;
+    color: cyan;
+}
+a {
+    font-family:'Droid Sans', serif;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+/******************** LEFTSIDE ICONS ********************/
+
+.leftside {
+    top: 25%;
+    position: fixed;
+    z-index:1; 
+}
+
+.leftside li {
+    list-style-type: none;
+    padding: 10px;
+    transition: 0.6s;
+    position: relative;
+    margin-top: -20px;
+}
+
+.leftside li i {
+    font-size: 40px;
+}
+
+.leftside li:hover {
+    padding: 10px 30px;
+}
+
+/******************** HOME SECTION ********************/
+#home {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cotainer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    /* border: 2px solid black; */
+}
+
+.cotainer-content h1 {
+    font-size: 60px;
+}
+
+.cotainer-content p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.image-container {
+    /* border: 2px solid black; */
+    width: 60%;
+    /* margin-top: 280px;     */
+    margin: auto;
+}
+
+.image-container img {
+    margin-top: 450px;
+    /* margin-left: 130px; */
+}
+
+.projects-link {
+    text-align: center;
+    margin-top: -180px;
+}
+
+.projects-link a {
+    font-size: 20px;
+}
+
+.projects-link a:hover {
+    color: cyan;
+    
+}
+
+
+/******************** PROJECTS SECTION ********************/
+
+#portfolio {
+    height: 100%;
+    width: 100%;
+}
+
+.projects-section {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 90px;
+    /* border: 2px solid red; */
+}
+
+.card-panel {
+    width: 360px;
+    height: 240px;
+    display: inline-block;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 8px #888888;
+    overflow: hidden;
+}
+
+#contact {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-content {
+    padding-top: 90px;
+    text-align: center;
+}
+
+form {
+    margin-top: 80px;
+}
+
+input[type=text], select, textarea {
+    width: 60%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid cyan; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 20px; /* Add a top margin */
+    margin-bottom: 30px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    border: 2px solid cyan;
+    color: cyan;
+}
+
+.user-info {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.name-info {
+    width: 100%;
+}
+
+.email-info {
+    width: 100%;
+}
+
+input[type=text] {
+    width: 95%; /* Full width */
+}
+
+
+
