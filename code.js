@@ -40,11 +40,3 @@ function onScroll(event){
     });
 }
 
-
-
-function mouseOverImage() {
-    document.getElementById("img").src = "./img/firstImg.png";
-}
-function mouseOutImage() {
-    document.getElementById("img").src = "./img/htmlcss.fw.png";
-}
