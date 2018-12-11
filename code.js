@@ -20,8 +20,7 @@ $(document).ready(function () {
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top+2
         }, 500, 'swing', function () {
-            // window.location.hash = target;
-            window.location.assign("index.html");
+            window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
     });
@@ -319,4 +318,5 @@ window.onload = loop;
 $("#submit").click(function () {
     $("#canvas").show();
     // alert("Submitted, click sumbit again to display fireworks!");
+    window.location.assign("index.html");
 });

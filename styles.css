@@ -121,6 +121,7 @@ a {
     transform: translate(-50%, -50%);
     width: 65%;
     /* border: 2px solid black; */
+    padding-top: 90px;
 }
 
 .cotainer-content h1 {
@@ -130,6 +131,11 @@ a {
 .cotainer-content p {
     font-size: 24px;
     text-align: center;
+}
+
+.cotainer-content p a {
+    font-size: 24px;
+    /* text-align: center; */
 }
 
 .image-container {
