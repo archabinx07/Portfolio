@@ -11,7 +11,6 @@ body, html {
 }
 
 canvas {
-	/* cursor: crosshair; */
     display: block;
     position: fixed;
 }
@@ -32,7 +31,6 @@ canvas {
     position: fixed;
     float: left;
     margin-top: -14px;
-    /* border: 2px solid black; */
     width: 30%;
 }
 
@@ -105,7 +103,6 @@ a {
 
 /******************** HOME SECTION ********************/
 #home {
-    /* height: 100%; */
     width: 100%;
     overflow: hidden;
 }
@@ -176,7 +173,6 @@ a {
     width: 80%;
     margin: auto;
     padding-top: 90px;
-    /* border: 2px solid red; */
 }
 
 .card-panel {
@@ -192,7 +188,47 @@ a {
     margin-right: 20px;
     box-shadow: 5px 8px #888888;
     overflow: hidden;
+    position: relative;
 }
+
+.overlay {
+    position: absolute;
+    transition: all .5s ease;
+    opacity: 0;
+    background: azure;
+}
+
+.card-panel:hover .overlay {
+    opacity: 8;
+}
+
+.text {
+    color: black;
+    position: absolute;
+    top: 20%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.text a {
+    color: darkred;
+    font-size: 20px;
+    margin: 0;
+}
+
+.overlayCross {
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+.card-panel:hover .overlayCross {
+    width: 100%;
+    height: 100%;
+}
+
+/******************** CONTACT SECTION ********************/
 
 #contact {
     height: 100%;
@@ -209,17 +245,16 @@ form {
 }
 
 input[type=text], select, textarea {
-    width: 60%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid cyan; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 20px; /* Add a top margin */
-    margin-bottom: 30px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 60%;
+    padding: 12px; 
+    border: 1px solid cyan;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    resize: vertical; 
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: black;
     color: white;
@@ -229,7 +264,6 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     border: 2px solid cyan;
     color: cyan;
@@ -251,7 +285,7 @@ input[type=submit]:hover {
 }
 
 input[type=text] {
-    width: 95%; /* Full width */
+    width: 95%; 
 }
 
 
