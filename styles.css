@@ -123,6 +123,20 @@ a {
 
 .cotainer-content h1 {
     font-size: 60px;
+    animation: type 3s steps(19);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    width: 19ch;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 19ch;
+    }
 }
 
 .cotainer-content p {
@@ -320,7 +334,7 @@ input[type=text] {
 
 footer {
     width: 100%;
-    height: 66px;
+    height: 100px;
     background: white;
     margin-top: 80px;
 }
@@ -328,8 +342,17 @@ footer {
 footer p {
     text-align: center;
     padding-top: 20px;
-    font-family: 'Patua One', cursive;
+    font-family: 'Fredoka One', cursive;
     font-size: 20px;
+    color: rgb(41,51,71);
+}
+
+.footer-icons {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(41,51,71);
+}
+.footer-icons:hover { 
     color: darkred;
 }
 
