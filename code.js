@@ -319,5 +319,5 @@ window.onload = loop;
 $("#submit").click(function () {
     $("#canvas").show();
     // alert("Submitted, click sumbit again to display fireworks!");
-    window.location.assign("index.html");
+    window.location.assign("index.html#contact");
 });
