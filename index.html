@@ -6,7 +6,6 @@
     <title>Wilmar Delgado</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-    <!-- <link rel="icon" href="./img/favicon.png" type="image/x-icon"/> -->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
@@ -14,35 +13,39 @@
 </head>
 <body>
 <div class="wrapper">
+
+    <!---NAVBAR MENU-->
     <div class="m1 menu">
-
-        <div class="hamburguer-bt">
-            <div class="hamburguer-bt__stripe hamburguer-bt__stripe__top"></div>
-            <div class="hamburguer-bt__stripe hamburguer-bt__stripe__middle"></div>
-            <div class="hamburguer-bt__stripe hamburguer-bt__stripe__bottom"></div>
-        </div>
-
-        <div class="logo">
-            <a href="index.html"><img src="./img/ml.png" alt=""></a>
-        </div>
-        <div id="navbar">
-            <ul>
-                <li>
-                    <a class="active" href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
+        <nav>
+            <div class="menu-icon">
+                <a href="javascript:void(0)" onclick="openNav()">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="./img/ml.png" alt=""></a>
+            </div>
+            <div id="navbar">
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="nav-mobile">
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-times"></i>
+                    </a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
         </div>
     </div>
 
-
+    <!---CANVAS FOR FIREWORKS-->
     <canvas id="canvas"></canvas>
 
+    <!---LEFTSIDE ICONS-->
     <div class="leftside">
         <ul>
             <li><a title="Linkedin" href="https://www.linkedin.com/in/wilmar-delgado-532a77172/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
@@ -52,10 +55,11 @@
         </ul>
     </div>
 
+    <!---HOMEPAGE-->
     <div id="home">
         <div class="cotainer-content">
             <h1>Front-End Developer</h1>
-            <p>Producing high quality responsive websites and exceptional user experience. Below are some profile cards of websites or projects that I've worked on that display skills or coding abilities.
+            <p>Hello, my name is Wilmar Delgado and I'm a Front-End Developer. Below are some profile cards of websites or projects that I've worked on that display skills or coding abilities.
                 Feel free to take a look at my projects. <br> Based in Calgary, AB. Enquires at <strong><a title="Contact Email" href="mailto:wilmardp50@gmail.com">wilmardp50@gmail.com</a></strong>
             </p>
         </div>
@@ -67,6 +71,7 @@
         </div>
     </div>
 
+    <!---RECENT PROJECTS-->
     <div id="portfolio">
         <div class="projects-section" id="projects">
             <h1>Recent Projects</h1>
@@ -99,7 +104,7 @@
                     <img  id= "img4" alt="image" height="240px" width="360px" src="./img/js.png"/> 
                     <div class="overlay overlayCross">
                         <div class="wptext"> 
-                                Some more JavaScript projects. Ramdon machine quote, color pallete generator and a quiz with some random questions. <br>
+                                Some more JavaScript projects. Ramdon quote machine, color pallete generator and a quiz with some random questions. <br>
                             <a href="https://assignmentjs4-qpsobvnxqw.now.sh/" target="_blank">Quote Machine JS</a> <br>  
                             <a href="https://assignmentjs6-ngzoufaacp.now.sh/" target="_blank">Color Palette Generator</a> <br>
                             <a href="https://assignmentjs5-thaozvzdfu.now.sh/" target="_blank">Simple Quiz</a> 
@@ -130,7 +135,7 @@
         </div>
     </div>
 
-    <!-- <div id="about"></div> -->
+    <!---CONTACT SECTION-->
 
     <div id="contact">
         <div class="contact-content">
@@ -148,9 +153,8 @@
         </div>
     </div>
     
-    <!---Footer-->
+    <!---FOOTER-->
     <footer>
-        <!-- <p id='todaysDate'></p> -->
         <p> Handcrafted by me &copy; 2018 | All Rights Reserved.</p>
         <div class="footer-icons">
             <i class="fab fa-linkedin"></i> 
