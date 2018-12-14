@@ -9,12 +9,19 @@
     <!-- <link rel="icon" href="./img/favicon.png" type="image/x-icon"/> -->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="wrapper">
     <div class="m1 menu">
+
+        <div class="hamburguer-bt">
+            <div class="hamburguer-bt__stripe hamburguer-bt__stripe__top"></div>
+            <div class="hamburguer-bt__stripe hamburguer-bt__stripe__middle"></div>
+            <div class="hamburguer-bt__stripe hamburguer-bt__stripe__bottom"></div>
+        </div>
+
         <div class="logo">
             <a href="index.html"><img src="./img/ml.png" alt=""></a>
         </div>
@@ -32,6 +39,7 @@
             </ul>
         </div>
     </div>
+
 
     <canvas id="canvas"></canvas>
 
@@ -104,8 +112,8 @@
                     <div class="overlay overlayCross">
                         <div class="wptext"> 
                             Some individual and group projects using WordPress. <br>
-                            <!-- <a href="http://35.237.233.93/wordpress1/" target="_blank">SECHELT VISITOR CENTRE</a> <br>   -->
-                            <a href="http://10.163.110.163/assignment1/" target="_blank">CG LAW LLP</a> <br>
+                            <a href="http://35.237.233.93/wordpress1/" target="_blank">SECHELT VISITOR CENTRE</a> <br>  
+                            <!-- <a href="http://10.163.110.163/assignment1/" target="_blank">CG LAW LLP</a> <br> -->
                             <a href="http://104.154.200.162/" target="_blank">City of Grande Prairie</a> <br>
                             <a href="http://35.247.63.134/" target="_blank">Calgary Snow Sports</a> 
                         </div>
@@ -137,13 +145,14 @@
             
                 <input type="submit" value="Submit" id="submit">  
             </form> -->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctVmMce1F-tPO4Tzkv6DNnogyVBaQJApXui1BKM4bvU1eLzQ/viewform?embedded=true" width="640" height="751" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            
+            <div class="frame-flex">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctVmMce1F-tPO4Tzkv6DNnogyVBaQJApXui1BKM4bvU1eLzQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
         </div>
     </div>
 
     <div class="top">
-        <!-- <i class="fas fa-angle-double-up"></i> <br>
-        <a href="#top">Back To Top</a> -->
         <div id="submit">
             <a href="#top"><button name="submit"type="submit"><span>Top</span></button></a>
         </div>
