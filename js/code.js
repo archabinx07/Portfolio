@@ -43,9 +43,9 @@ function onScroll(event){
 }
 
 
-//**********************
-//Mobile-nav
-//**********************
+// ******************************************************
+// MOBILE NAV
+// ******************************************************
 
 function openNav() {
 document.getElementById("nav-mobile").style.width = "250px";
