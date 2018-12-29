@@ -417,7 +417,7 @@ footer {
     height: 120px;
     width: 100%;
     background: white;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     text-align: center;
 }
 
@@ -576,12 +576,12 @@ footer p {
         overflow: hidden;
         position: relative;
     } 
-    footer {
+    /* footer {
         height: 150px;
         width: 100%;
         background: white;
         margin-top: 80px;
-    }
+    } */
 }
 
 @media screen and (max-width: 460px) {
