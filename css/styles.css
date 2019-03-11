@@ -350,7 +350,7 @@ a {
 .contact-content {
     padding-top: 90px;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 150px; /*changed*/
 }
 
 form {
