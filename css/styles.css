@@ -343,7 +343,7 @@ a {
 /******************** CONTACT SECTION ********************/
 
 #contact {
-    /* height: 100%; */
+    margin-top: 50px;
     width: 100%;
 }
 
